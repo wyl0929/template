@@ -1,0 +1,124 @@
+
+% Author       : Yulong Wang
+% Date         : 2021-09-17 21:06:19
+% LastEditors  : Yulong Wang
+% LastEditTime : 2022-08-26 20:55:46
+% Description  : preamble for normal tex
+
+% Documentclass
+% \documentclass[10pt,a4paper,twocolumn,journal]{IEEEtran}
+% \documentclass[12pt,a4paper]{ctexart}
+
+% Chinese environment
+\usepackage[UTF8,
+scheme=plain,
+zihao=-4,
+linespread=1.1,
+autoindent=true,
+heading=true]{ctex}
+% \usepackage[utf8]{inputenc}
+\DeclareFontFamily{U}{rsfs}{\skewchar\font127 } % refine for error "Font shape `U/rsfs/m/n' in size <15.05624> not available"
+\DeclareFontShape{U}{rsfs}{m}{n}{%
+   <-6> rsfs5
+   <6-8> rsfs7
+   <8-> rsfs10
+}{}
+
+% Code environment
+\usepackage{framed}
+
+% text typography
+\usepackage{ulem}       % upgraded underline
+% \pagestyle{fancy}
+\usepackage{fancyhdr}   % fancy style of heading and foot
+\usepackage{indentfirst}% first paragraph indent
+\usepackage{color}      % coloring
+\usepackage{xcolor}     % more coloring
+\usepackage{tipa}       % typography for IPA
+\usepackage{ctex}       % pacage for Chinese
+\usepackage{xeCJK}
+
+\usepackage{titlesec}   % change title's format
+\titleformat{\paragraph}{\bfseries}{}{}{\hspace{1em}·}[]
+
+\usepackage{titletoc}   % pacage for contents
+% \newfontfamily\sectionef{Timenew-roman}
+% \titleformat*{\section}{\large\heiti}
+% \titleformat*{\subsection}{\small\heiti}
+% \titleformat*{\subsubsection}{\small\kaishu}
+
+
+
+% tabular and picture packages
+\usepackage{enumitem}   % label of list
+\usepackage{booktabs}   % Three-line table
+\usepackage{array}      % <> embellish
+\usepackage{makecell}   % colum break
+\usepackage{multirow}   % multi tier
+\usepackage{multicol}   % multi colum
+
+\usepackage{graphicx}   % insert pictures
+\usepackage{float}      % float enable ⟨placement⟩ = H
+\usepackage{stfloats}
+% \usepackage{subfig}     % support for subfigure
+\usepackage{subfigure}  % another support for subfigure
+\usepackage{tikz}       % TikZ painting
+
+% math emvironment
+\usepackage{amsmath}    % support for math emvironment from AMS
+\usepackage{amsthm}     % optional threorem style and proof
+\usepackage{amsbsy}     % bf for part
+\usepackage{amssymb}    % symbols form AMS
+\usepackage{mathrsfs}   % symbols for mathscr
+\usepackage{bm}         % bold symbol
+
+% customization
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ee}{\mathrm{e}}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\vip}[1]{\textcolor{red}{\textbf{#1}}}
+
+\newenvironment{cnabstract}{\fontsize{9pt}{1}{\heiti 摘\hspace{0.9em}要：}\songti }{}
+\newenvironment{key}{\fontsize{9pt}{1}{\heiti 关键词：}\songti }{}
+\newenvironment{cnquote}{\begin{quote}\kaishu \small}{\end{quote}}
+
+\theoremstyle{plain}% default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{xca}[exmp]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem*{sol}{Solution}
+\newtheorem{case}{Case}
+
+\newenvironment{prop}{\noindent \textbf{Prop:} \begin{enumerate}}{\end{enumerate}}
+
+% Reference & index
+% \usepackage{imakeidx}           % index available
+% \makeindex[columns=2, options= -s en.ist, intoc]   % index customization for en
+% zhmakeindex -s cn.ist main.idx  % makeindex cmd for cn
+\bibliographystyle{IEEEtran}    % bibtex refernce style
+% \renewcommand\refname{参考文献}  % rename refernce title
+\usepackage{natbib}             % modern style of citation
+\setcitestyle{authoryear,open={[},close={]}} %Citation-related commands
+\newcommand{ \upcitep}[1]{\textsuperscript{\textsuperscript{\citep{#1} } }} % cite at upper
+% \usepackage{bookmark}
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue!70,
+    anchorcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+]{hyperref}                     % hyperref style
