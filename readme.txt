@@ -1,0 +1,1 @@
+This is a costomized template for Latex.
