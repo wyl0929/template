@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2022-09-11 16:50:55
+% LastEditTime : 2022-09-14 15:54:12
 % Description  : preamble for normal tex
 
 % Documentclass
@@ -49,7 +49,7 @@ heading=true]{ctex}
 
 
 
-% tabular and picture packages
+% tabular, picture & list packages
 \usepackage{enumitem}   % label of list
 \usepackage{booktabs}   % Three-line table
 \usepackage{array}      % <> embellish
@@ -63,6 +63,10 @@ heading=true]{ctex}
 % \usepackage{subfig}     % support for subfigure
 \usepackage{subfigure}  % another support for subfigure
 \usepackage{tikz}       % TikZ painting
+
+\usepackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
 
 % math emvironment
 \usepackage{amsmath}    % support for math emvironment from AMS
