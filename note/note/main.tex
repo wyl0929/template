@@ -2,13 +2,16 @@
 % Author       : Yulong Wang
 % Date         : 2021-11-10 09:50:20
 % LastEditors  : Yulong Wang
-% LastEditTime : 2022-08-15 21:39:43
-% FilePath     : \物理c:\Users\WYL\Documents\template\note\note\main.tex
+% LastEditTime : 2022-09-27 21:29:47
+% FilePath     : \Chem-Bioc:\Users\WYL\Documents\Template\note\note\main.tex
 % Description  :
 
 \documentclass[12pt,a4paper,oneside]{book}
 
 \input{C:/Users/WYL/Documents/template/preamble/preamble.tex}
+
+\usepackage{makeidx}      % index
+\makeindex                % cmd: zhmakeindex -s <style>.ist <main>.idx
 
 \title{}
 \author{Yulong Wang}
@@ -18,16 +21,16 @@
 
 \maketitle
 
-% \part{}
-\input{content/0_Intro.tex}
+% \tableofcontents  % 目录
 
-% \tableofcontents
+    一个模板\index{模板}\cite{WhuEducationRevolution}
 
+\newpage
+\renewcommand{\bibname}{参考文献}
+\bibliography{ref}      % cmd: bibtex <main>.aux
 
-
-% \part{}
-
-
-
+\newpage
+\renewcommand\indexname{索引}
+\printindex
 
 \end{document}
