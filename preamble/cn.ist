@@ -1,11 +1,31 @@
+preamble "
+\\begin{theindex}\n
+"
+
 headings_flag 1
 
-heading_prefix "%\n\\indexgroup{"
-heading_suffix "}\n%\n"
+heading_prefix "\\centering\\large\\sffamily\\textbf{"
+heading_suffix "}\\par\\nopagebreak\n"
 
-item_0 "\n \\item \\small "
+item_0  "\n \\kaishu\\item "
+item_01 "\n   \\subitem "
+item_1  "\n   \\subitem "
+item_2  "\n     \\subsubitem "
+
+delim_0 " \\dotfill "
+delim_1 " \\hfill "
+delim_2 " \\hfill "
+
+encap_infix  "{"
+encap_suffix "}"
+
+group_skip "\n\n  \\indexspace\n  \\indexspace\n\n"
 
 numhead_positive "数字"
 numhead_negative "数字"
 symhead_positive "符号"
 symhead_negative "符号"
+
+postamble "
+\\end{theindex}
+"
