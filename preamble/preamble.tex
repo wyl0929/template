@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2023-03-30 09:17:09
+% LastEditTime : 2023-05-02 20:56:04
 % Description  : preamble for normal tex
 
 % Documentclass
@@ -112,12 +112,12 @@ heading=true]{ctex}
 \newenvironment{prop}{\noindent \textbf{Prop:} \begin{enumerate}}{\end{enumerate}}
 
 % Reference & index
-% \usepackage{imakeidx}           % index available
-% \makeindex[columns=2, options= -s en.ist, intoc]   % index customization for en
-% zhmakeindex -s cn.ist main.idx  % makeindex cmd for cn
-\bibliographystyle{plain}    % bibtex refernce style
-% \renewcommand\refname{参考文献}  % rename refernce title
+% \usepackage{makeidx}      % index for cn
+% \makeindex                % cmd: zhmakeindex -s <style>.ist <main>.idx
+% \usepackage{imakeidx}     % index for en
+% \makeindex[title = Index, columns=2, columnsep = 2em, columnseprule, options= -s en.ist, intoc]   % index customization for en
 \usepackage{natbib}             % modern style of citation
+\bibliographystyle{plain}    % bibtex refernce style
 \setcitestyle{authoryear,open={[},close={]}} %Citation-related commands
 \newcommand{ \upcitep}[1]{\textsuperscript{\textsuperscript{\citep{#1} } }} % cite at upper
 % \usepackage{bookmark}

@@ -1,10 +1,15 @@
 headings_flag 1
 
-heading_prefix "\n\\centering\\large\\sffamily\\bfseries%
-\\noindent\\textbf{"heading_suffix "}\\par\\nopagebreak\n"
+heading_prefix "\\centering\\large\\sffamily\\textbf{"
+heading_suffix "}\\par\\nopagebreak\n"
 
-item_0 "\n \\item \\small "
+item_0  "\n \\item \\small"
+item_01 "\n   \\subitem \\small"
+item_1  "\n   \\subitem \\small"
+item_2  "\n     \\subsubitem \\small"
 
-delim_0 " \\hfill "
+delim_0 " \\dotfill "
 delim_1 " \\hfill "
 delim_2 " \\hfill "
+
+group_skip "\n\n  \\indexspace\n  \\indexspace\n\n"
