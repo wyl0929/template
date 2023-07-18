@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2023-05-02 20:56:04
+% LastEditTime : 2023-07-18 11:32:46
 % Description  : preamble for normal tex
 
 % Documentclass
@@ -83,6 +83,7 @@ heading=true]{ctex}
 \newcommand{\NN}{\mathbb{N}}
 \newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\ee}{\mathrm{e}}
 
@@ -94,20 +95,21 @@ heading=true]{ctex}
 \newenvironment{cnquote}{\begin{quote}\kaishu \small}{\end{quote}}
 
 \theoremstyle{plain}% default
-\newtheorem{thm}{Theorem}[section]
-\newtheorem{lem}[thm]{Lemma}
 \newtheorem*{cor}{Corollary}
 \newtheorem{xca}{Exercise}[section]
 
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
 
 \theoremstyle{remark}
 \newtheorem*{rem}{Remark}
 \newtheorem*{sol}{Solution}
+\newtheorem*{prf}{Proof}
 \newtheorem*{exmp}{Example}
 \newtheorem*{note}{Note}
-\newtheorem{case}{Case}
+\newtheorem*{case}{Case}
 
 \newenvironment{prop}{\noindent \textbf{Prop:} \begin{enumerate}}{\end{enumerate}}
 
