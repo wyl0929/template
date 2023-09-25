@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2023-07-18 11:32:46
+% LastEditTime : 2023-09-21 20:49:33
 % Description  : preamble for normal tex
 
 % Documentclass
@@ -93,20 +93,20 @@ heading=true]{ctex}
 \newenvironment{cnabstract}{\fontsize{9pt}{1}{\heiti 摘\hspace{0.9em}要：}\songti }{}
 \newenvironment{key}{\fontsize{9pt}{1}{\heiti 关键词：}\songti }{}
 \newenvironment{cnquote}{\begin{quote}\kaishu \small}{\end{quote}}
+\newenvironment{prf}{\begin{proof}\small\itshape}{\end{proof}\vspace{0.5em}}
 
 \theoremstyle{plain}% default
-\newtheorem*{cor}{Corollary}
 \newtheorem{xca}{Exercise}[section]
 
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}[section]
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
 
 \theoremstyle{remark}
 \newtheorem*{rem}{Remark}
 \newtheorem*{sol}{Solution}
-\newtheorem*{prf}{Proof}
 \newtheorem*{exmp}{Example}
 \newtheorem*{note}{Note}
 \newtheorem*{case}{Case}
