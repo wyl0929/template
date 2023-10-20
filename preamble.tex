@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2023-09-21 20:49:33
+% LastEditTime : 2023-10-20 14:24:36
 % Description  : preamble for normal tex
 
 % Documentclass
@@ -99,10 +99,11 @@ heading=true]{ctex}
 \newtheorem{xca}{Exercise}[section]
 
 \theoremstyle{definition}
-\newtheorem{defn}{Definition}[section]
-\newtheorem{thm}{Theorem}[section]
+\newtheorem{defn}{Definition}[chapter]
+\newtheorem{thm}{Theorem}[chapter]
 \newtheorem{lem}[thm]{Lemma}
-\newtheorem{cor}[thm]{Corollary}
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{prop}[cor]{proposition}
 
 \theoremstyle{remark}
 \newtheorem*{rem}{Remark}
@@ -110,8 +111,6 @@ heading=true]{ctex}
 \newtheorem*{exmp}{Example}
 \newtheorem*{note}{Note}
 \newtheorem*{case}{Case}
-
-\newenvironment{prop}{\noindent \textbf{Prop:} \begin{enumerate}}{\end{enumerate}}
 
 % Reference & index
 % \usepackage{makeidx}      % index for cn
