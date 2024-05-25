@@ -2,8 +2,8 @@
 % Author       : Yulong Wang
 % Date         : 2024-03-12 18:19:11
 % LastEditors  : Yulong Wang
-% LastEditTime : 2024-03-12 18:19:11
-% FilePath     : \Physicsc:\Users\WYL\Documents\template\preamble copy.tex
+% LastEditTime : 2024-05-25 20:30:15
+% FilePath     : \Physicsc:\Users\WYL\Documents\template\preamble_article.tex
 % Description  : preamble for article tex
 
 % Documentclass
@@ -71,13 +71,40 @@ heading=true]{ctex}
 \setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
 \setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
 
-% math emvironment
-\usepackage{amsmath}    % support for math emvironment from AMS
-\usepackage{amsthm}     % optional threorem style and proof
+% math environment
+\usepackage{amsmath}    % support for math environment from AMS
+\usepackage{amsthm}     % optional theorem style and proof
 \usepackage{amsbsy}     % bf for part
 \usepackage{amssymb}    % symbols form AMS
 \usepackage{mathrsfs}   % symbols for mathscr
 \usepackage{bm}         % bold symbol
+
+% code environment
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+	language=python,    % 使用的语言
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,             % 仅在字符串中允许空格
+	backgroundcolor=\color{white},      % 选择代码背景，必须加上 color 或 xcolor
+	columns=flexible,
+	basicstyle = \ttfamily\small,
+	numbers=none,       % 给代码添加行号，可取值none, left, right.
+	numberstyle=\small \color{gray},    % 行号的字号和颜色
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},       % 设置注释格式
+	stringstyle=\color{mauve},
+	breaklines=true,    % 设置自动断行.
+	breakatwhitespace=true,             % 设置是否当且仅当在空白处自动中断.
+	escapeinside=``,    %逃逸字符(1左面的键)，用于显示中文
+	frame=single,       %设置边框格式
+	extendedchars=false,                % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+	xleftmargin=2em,xrightmargin=2em, aboveskip=1em,    %设置边距
+	tabsize=4           % 将默认tab设置为4个空格
+}
 
 % customization
 \newcommand{\CC}{\mathbb{C}}
