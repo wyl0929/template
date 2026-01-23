@@ -2,7 +2,7 @@
 % Author       : Yulong Wang
 % Date         : 2021-09-17 21:06:19
 % LastEditors  : Yulong Wang
-% LastEditTime : 2024-05-03 11:56:18
+% LastEditTime : 2024-11-06 17:25:29
 % Description  : preamble for book tex
 
 % Documentclass
@@ -86,6 +86,7 @@ heading=true]{ctex}
 \newcommand{\ZZ}{\mathbb{Z}}
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\ee}{\mathrm{e}}
+\newcommand{\VV}{\mathbb{V}}
 
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\vip}[1]{\textcolor{red}{\textbf{#1}}}
@@ -96,20 +97,20 @@ heading=true]{ctex}
 \newenvironment{prf}{\begin{proof}\small\itshape}{\end{proof}\vspace{0.5em}}
 \newenvironment{property}{\noindent \textbf{property:} \begin{enumerate}}{\end{enumerate}}
 
-\theoremstyle{plain}% default
-\newtheorem{xca}{Exercise}[chapter]
+\theoremstyle{plain}    % default
+\newtheorem{xca}{Exc}[chapter]
 
 \theoremstyle{definition}
-\newtheorem{defn}{Definition}[chapter]
-\newtheorem{thm}{Theorem}[chapter]
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{cor}{Corollary}[section]
-\newtheorem{prop}[cor]{proposition}
+\newtheorem{defn}{Def}[chapter]
+\newtheorem{thm}{Thm}[section]
+\newtheorem{lem}[thm]{Lem}
+\newtheorem{cor}{Cor}[section]
+\newtheorem{prop}[cor]{prop}
 
 \theoremstyle{remark}
-\newtheorem*{rem}{Remark}
-\newtheorem*{sol}{Solution}
-\newtheorem*{exmp}{Example}
+\newtheorem*{rem}{Rem}
+\newtheorem*{sol}{Sol}
+\newtheorem*{exmp}{Exp}
 \newtheorem*{note}{Note}
 \newtheorem*{case}{Case}
 
